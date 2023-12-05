@@ -6,15 +6,15 @@ app.use(express.static(path.join(__dirname, '/public')))
 
 
 app.get("/Higher-Lower", (req, res) => {
-    res.send("Higher-Lower")
+    res.sendFile(path.join(__dirname, '/public/Higher-Lower-Project/Higher-Lower.html'))
 })
 
 app.get("/HangMan-Project", (req, res) => {
-    res.send("Hangman")
+    res.sendFile(path.join(__dirname, '/public/HangMan-Project/Hangman.html'))
 })
 
 app.get("/Rock-Project", (req, res) => {
-    res.send("rock paper scissors")
+    res.sendFile(path.join(__dirname, '/public/Rock-Project/Rock-Project.html'))
 })
 
 
